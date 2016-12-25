@@ -68,6 +68,5 @@ setInterval(function() {
   else {
     document.getElementById('greeting').innerHTML="Happy Holidays," + "<br>" + delineate(text) + "!";
   }
-}
 
 
