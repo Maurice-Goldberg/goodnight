@@ -60,18 +60,6 @@ setInterval(function() {
     initTrail() 
     document.onmousemove = processEvent // start capturing
 
-
-function start() {
-  function playSong() {
-  //play song on loop
-  myAudio = new Audio('goodnight.wav'); 
-  myAudio.addEventListener('ended', function() {
-    this.currentTime = 0;
-    this.play();
-  }, false);
-  myAudio.play();
-  }
-
   if(delineate(text) == "http://sunspeakernyc.com/goodnight") {
     console.log("test");
     document.getElementById('greeting').innerHTML="Happy Holidays!";
