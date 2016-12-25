@@ -32,6 +32,7 @@ canvas {
 	text-shadow: 3px 3px blue;
 	white-space: nowrap;
   	overflow: hidden;
+  	text-align: center;
 }
 
 #greeting:hover {
@@ -42,6 +43,7 @@ canvas {
   	transform: translate3d(0, 0, 0);
   	backface-visibility: hidden;
   	perspective: 1000px;
+  	text-align: center;
 }
 
 #goodnight {

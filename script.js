@@ -74,12 +74,12 @@ function start() {
   */
   }
 
-  if(name == undefined) {
+  if(delineate(text) == "file:///Users/owner/Documents/Christmas%20Card") {
     document.getElementById('greeting').innerHTML="Happy Holidays!";
   }
 
   else {
-    document.getElementById('greeting').innerHTML="Happy Holidays," + "<br>" + name + "!";
+    document.getElementById('greeting').innerHTML="Happy Holidays," + "<br>" + delineate(text) + "!";
   }
 }
 
