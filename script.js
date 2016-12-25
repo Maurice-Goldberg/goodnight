@@ -74,7 +74,7 @@ function start() {
   */
   }
 
-  if(delineate(text) == "file:///Users/owner/Documents/Christmas%20Card") {
+  if(delineate(text) == "http://sunspeakernyc.com/goodnight") {
     document.getElementById('greeting').innerHTML="Happy Holidays!";
   }
 
