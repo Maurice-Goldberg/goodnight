@@ -8,7 +8,7 @@ setInterval(function(){
 }, 2000);
 
 setInterval(function() {
-    $("#moon").stop(true,true).animate({left: 1175}, 1500, 
+    $("#snowman").stop(true,true).animate({left: 1160}, 1500, 
           function(){ $(this).stop(true,true).animate({left: 0}, 1500); 
     });
 }, 3000);
@@ -61,8 +61,8 @@ setInterval(function() {
     document.onmousemove = processEvent // start capturing
 
 
-
 function start() {
+  function playSong() {
   //play song on loop
   /*
   myAudio = new Audio('goodnight.wav'); 
@@ -72,24 +72,15 @@ function start() {
   }, false);
   myAudio.play();
   */
-
-  //webGL
-  var canvas = document.getElementById("glcanvas");
-
-  // Initialize the GL context
-  gl = initWebGL(canvas);
-  
-  // Only continue if WebGL is available and working
-  if (!gl) {
-    return;
   }
 
-  // Set clear color to black, fully opaque
-  gl.clearColor(0.0, 0.0, 0.0, 1.0);
-  // Enable depth testing
-  gl.enable(gl.DEPTH_TEST);
-  // Near things obscure far things
-  gl.depthFunc(gl.LEQUAL);
-  // Clear the color as well as the depth buffer.
-  gl.clear(gl.COLOR_BUFFER_BIT | gl.DEPTH_BUFFER_BIT);
+  if(name == undefined) {
+    document.getElementById('greeting').innerHTML="Happy Holidays!";
+  }
+
+  else {
+    document.getElementById('greeting').innerHTML="Happy Holidays," + "<br>" + name + "!";
+  }
 }
+
+
