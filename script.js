@@ -75,6 +75,7 @@ function start() {
   }
 
   if(delineate(text) == "http://sunspeakernyc.com/goodnight") {
+    console.log("test");
     document.getElementById('greeting').innerHTML="Happy Holidays!";
   }
 
