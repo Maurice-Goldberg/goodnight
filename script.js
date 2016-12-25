@@ -64,14 +64,12 @@ setInterval(function() {
 function start() {
   function playSong() {
   //play song on loop
-  /*
   myAudio = new Audio('goodnight.wav'); 
   myAudio.addEventListener('ended', function() {
     this.currentTime = 0;
     this.play();
   }, false);
   myAudio.play();
-  */
   }
 
   if(delineate(text) == "http://sunspeakernyc.com/goodnight") {
