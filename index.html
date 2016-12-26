@@ -9,6 +9,18 @@
 
 <body>
 
+<audio autoplay controls loop style="display:none">
+  <source src="goodnight.wav" type="audio/wav">
+  Your browser does not support the audio element.
+</audio>
+
+<video id="bgvid" playsinline autoplay muted loop>
+  	<source src="physicalmemory.mp4" type="video/mp4">
+</video>
+
+  <p id="greeting"></p>
+  <p id="goodnight" class="blink">Goodnight!</p>
+
 <FORM NAME="joe">
 <INPUT TYPE="hidden" NAME="burns">
 </FORM>
@@ -27,19 +39,16 @@ theright = str.lastIndexOf("/");
 return(str.substring(theleft, theright));
 }
 
+if(delineate(text) == "http://sunspeakernyc.com/goodnight") {
+    console.log("test");
+    document.getElementById('greeting').innerHTML="Happy Holidays!";
+}
+
+else {
+  document.getElementById('greeting').innerHTML="Happy Holidays," + "<br>" + delineate(text) + "!";
+}
+
 </SCRIPT> 
-
-<audio autoplay controls loop style="display:none">
-  <source src="goodnight.wav" type="audio/wav">
-  Your browser does not support the audio element.
-</audio>
-
-<video id="bgvid" playsinline autoplay muted loop>
-  	<source src="physicalmemory.mp4" type="video/mp4">
-</video>
-
-  <p id="greeting"></p>
-  <p id="goodnight" class="blink">Goodnight!</p>
 
   <img id="heart" src='heart.png' style="width: 100px; top: 15px; left: 550px; position: absolute;">
   <img id="snowman" src='snowman.png' style="width: 120px; top: 500px; left: 550px; position: absolute;">

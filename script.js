@@ -58,15 +58,6 @@ setInterval(function() {
   }
 
     initTrail() 
-    document.onmousemove = processEvent // start capturing
-
-  if(delineate(text) == "http://sunspeakernyc.com/goodnight") {
-    console.log("test");
-    document.getElementById('greeting').innerHTML="Happy Holidays!";
-  }
-
-  else {
-    document.getElementById('greeting').innerHTML="Happy Holidays," + "<br>" + delineate(text) + "!";
-  }
+    document.onmousemove = processEvent // start capturing 
 
 
